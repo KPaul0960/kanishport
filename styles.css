@@ -32,7 +32,6 @@ nav {
     overflow: hidden;
     margin: 20px;
     padding: 5px;
-    backdrop-filter: blur(5px) brightness(150%);
     border-radius: 5px;
 }
 
