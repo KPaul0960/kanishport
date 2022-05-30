@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Victor;
+    src: url(Terminess.ttf);
+}
+
+body {
+    font-family: Victor;
+    font-size: large;
+    background-attachment: fixed;
+    background-image: url(https://i.imgur.com/tdE5Ubn.jpg);
+    background-size: cover;
+    margin: 0;
+}
+
+h1 {
+    color: rgb(253, 216, 169);
+    font-size: xx-large;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(253, 216, 169);
+    font-size: xx-large;
+    text-align: center;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+a {
+    color: rgb(253, 216, 169);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    top: 0;
+    bottom: 0;
+    left: 0;        
+    right: 0;
+    margin: auto;
+      
+}
+
+nav {
+    position: sticky;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.link {
+    color: white;
+}
+
+.badge {
+    border-radius: 5px;
+}
+
+.content {
+    margin: 0px;
+    padding: 0px 150px;
+    border-radius: 5px;
+}
+
+.profile-image {
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.desktop-image {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar {
+    width: 20px;
+}  
+
+body::-webkit-scrollbar-track {
+    background-color: #70759d;
+    border-radius: 0px;
+  }
+   
+body::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-image: linear-gradient(180deg, #2f323e 1%, #2f323e 99%);
+  }
+
+footer {
+    background-color: #2c2c2c;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+div {
+    background-color: rgb(44, 44, 44, 0.2);
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 5px;
+}
+
+.background {
+    background-color: rgb(44, 44, 44, 0);
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: rgb(0, 0, 0, 0);
+    margin: 0px;
+    padding: 5px;
+}
