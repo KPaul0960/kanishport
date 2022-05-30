@@ -57,6 +57,8 @@ nav {
 
 .link {
     color: white;
+    text-align: center;
+    margin-left: 5px;
 }
 
 .badge {
