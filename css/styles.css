@@ -10,6 +10,7 @@ body {
     background-image: url(https://i.imgur.com/tdE5Ubn.jpg);
     background-size: cover;
     margin: 0;
+    overflow: overlay;
 }
 
 h1 {
@@ -94,15 +95,10 @@ nav {
 body::-webkit-scrollbar {
     width: 20px;
 }  
-
-body::-webkit-scrollbar-track {
-    background-color: #70759d;
-    border-radius: 0px;
-  }
    
 body::-webkit-scrollbar-thumb {
     border-radius: 25px;
-    background-image: linear-gradient(180deg, #2f323e 1%, #2f323e 99%);
+    background-image: linear-gradient(180deg, #2c2c2c 1%, #2c2c2c 99%);
   }
 
 footer {
@@ -120,7 +116,7 @@ div {
     border-radius: 25px;
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(0, 0, 0);
+    border-color: rgb(51, 51, 51, 0.5);
     margin: 10px;
     padding: 5px;
 }
