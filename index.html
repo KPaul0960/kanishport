@@ -97,7 +97,53 @@
 
                     <h2> Crosshair </h2>
                     <p>0;c;1;P;h;0;f;0;m;1;0t;1;0l;4;0o;1;0a;1;0f;0;1t;3;1o;2;1a;1;1m;0;1f;0</p>
-                    <p><a href="https://i.imgur.com/Hn7kVkM.png" class="link">Crosshair IMG</a></p>
+                    <p onclick="showImage('https://i.imgur.com/Hn7kVkM.png')">Crosshair Image</p>
+                    <script>
+                        function showImage(src) {
+                            // Create a modal element
+                            var modal = document.createElement('div');
+                            modal.style.position = 'fixed';
+                            modal.style.top = 0;
+                            modal.style.left = 0;
+                            modal.style.width = '100%';
+                            modal.style.height = '100%';
+                            modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+                            modal.style.zIndex = 9999;
+
+                            // Create an image element inside the modal
+                            var modalImg = document.createElement('img');
+                            modalImg.src = src;
+                            modalImg.style.display = 'block';
+                            modalImg.style.margin = 'auto';
+                            modalImg.style.maxHeight = '90%';
+                            modalImg.style.maxWidth = '90%';
+                            modalImg.style.position = 'absolute';
+                            modalImg.style.top = 0;
+                            modalImg.style.bottom = 0;
+                            modalImg.style.left = 0;
+                            modalImg.style.right = 0;
+
+                            // Add the image element to the modal element
+                            modal.appendChild(modalImg);
+
+                            // Add the modal element to the page
+                            document.body.appendChild(modal);
+
+                            // Remove the modal element when clicked
+                            modal.onclick = function() {
+                                modal.parentElement.removeChild(modal);
+                            };
+
+                            // Add zoom functionality to the image
+                            var scale = 1.0;
+                            modalImg.addEventListener('wheel', function(e) {
+                                e.preventDefault();
+                                scale += e.deltaY * -0.01;
+                                scale = Math.min(Math.max(0.1, scale), 4.0);
+                                modalImg.style.transform = 'scale(' + scale + ')';
+                            });
+                            }
+                            </script>
             </div>
         
         </section>
